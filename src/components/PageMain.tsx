@@ -150,7 +150,7 @@ const PageMain = ({ shortListed }: { shortListed?: boolean }) => {
                                     </Button>
                                 </div>
                                 <div className="mt-6">
-                                    <object width="100%" height="500" data={resume}></object>
+                                    <object aria-label="pdf" width="100%" height="500" data={resume}></object>
                                 </div>
                             </Fragment>
                         </Card>

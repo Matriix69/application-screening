@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import { useState } from "react";
 import TabPanels from "./Tabs/TabPanels";
 import AppTabs from "./Tabs/Tabs";

@@ -15,7 +15,7 @@ const ApplicantPreviewCard = ({ item }: { item: mockType }) => {
             style={{ boxShadow: "0px 1px 2px rgba(0, 0, 0, 0.32)" }}
             onClick={() => dispatch(viewApplicant(id))}
         >
-            <img src={image} className=" w-[50px] h-[50px] object-cover rounded-full " />
+            <img src={image} className=" w-[50px] h-[50px] object-cover rounded-full " alt={name} />
             <div>
                 <h2 className="font-bold text-base mb-3">{name}</h2>
                 <div className="flex gap-2 items-center mb-1">

@@ -44,28 +44,6 @@ const StyledTab = styled((props: StyledTabProps) => <Tab {...props} />)(({ theme
     },
 }));
 
-interface TabPanelProps {
-    children?: React.ReactNode;
-    index: number;
-    value: number;
-}
-
-function TabPanel(props: TabPanelProps) {
-    const { children, value, index, ...other } = props;
-
-    return (
-        <div
-            role="tabpanel"
-            hidden={value !== index}
-            id={`simple-tabpanel-${index}`}
-            aria-labelledby={`simple-tab-${index}`}
-            {...other}
-        >
-            {value === index && children}
-        </div>
-    );
-}
-
 export default function AppTabs({ setValue, value, tabs }: { setValue: (val: number) => void; value: number; tabs: string[] }) {
     const handleChange = (event: React.SyntheticEvent, newValue: number) => {
         setValue(newValue);

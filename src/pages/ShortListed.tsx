@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { switchSelected } from "../app/applicantsSlice";
 import { useAppDispatch } from "../app/hook";
-import PageAside from "../components/PageAside";
 import PageMain from "../components/PageMain";
 import ShortListedAside from "../components/ShortListedAside";
 
@@ -10,7 +9,7 @@ const ShortListed = () => {
 
     useEffect(() => {
         dispatch(switchSelected("shortListed"));
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className="grid lg:grid-cols-[370px_1fr] items-start gap-2">

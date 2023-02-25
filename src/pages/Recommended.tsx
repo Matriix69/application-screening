@@ -9,7 +9,7 @@ const Recommended = () => {
 
     useEffect(() => {
         dispatch(switchSelected("recommended"));
-    }, []);
+    }, [dispatch]);
 
     return (
         <div className="grid lg:grid-cols-[370px_1fr] items-start gap-2">
